@@ -1,0 +1,113 @@
+
+
+
+
+// =====================================
+//       ALL TYPOGRAPHY MIXINS
+//======================================
+// REGULAR TYPOGRAPHY
+@mixin regular__typography {
+    font-weight: 400;
+    font-family: $primary__family;
+}
+
+// MEDIUM TYPOGRAPHY
+@mixin medium__typography {
+    font-weight: 500;
+    font-family: $primary__family;
+}
+
+// BOLD TYPOGRAPHY
+@mixin bold__typography {
+    font-weight: 700;
+    font-family: $primary__family;
+}
+
+
+//=====================================
+//      TRANSITION BROWSER PREFIX
+//======================================
+@mixin cursor__transition {
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+
+// =====================================
+//         FLEX CENTER PROPERTY
+//======================================
+@mixin flex__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+// =====================================
+//      BACKGROUND IMAGE PROPERTY
+//======================================
+@mixin background__property {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+// =====================================
+//       DROPDOWN TRIANGLE SHAPE
+//======================================
+@mixin dropdown__triangle {
+    position: absolute;
+    content: "";
+    top: -8px;
+    right: 15px;
+    transform: rotate(45deg);
+    border-radius: 3px;
+    border-top: 10px solid #8e47ff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid #8e47ff;
+    border-bottom: 10px solid transparent;
+    z-index: 2;
+}
+
+
+// =====================================
+//      DROPDOWN BACKGROUND OVERLAY
+//======================================
+@mixin backgroud__overlay {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgba(144, 75, 255, 0.8), rgba(141, 71, 255, 0.8));
+    z-index: -1;
+}
+
+
+// =====================================
+//      DROPDOWN MENU ANCHOR TAG
+//======================================
+@mixin dropdown__anchor {
+    @include flex__center;
+    justify-content: start;
+    width: 100%;
+    padding: 12px 25px 12px 25px;
+    border-bottom: 1px solid $e__color;
+}
+
+
+// =====================================
+//     DROPDOWN MENU P TAG PROPERTY
+//======================================
+@mixin p__property {
+    color: $text__color;
+    font-size: $sm__size;
+    @include regular__typography;
+    text-transform: capitalize;
+}

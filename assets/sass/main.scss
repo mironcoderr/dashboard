@@ -1,0 +1,53 @@
+
+
+
+//========================================
+//          1 - HELPERS FOLDER
+//========================================
+@import "1-helpers/_font.scss";
+@import "1-helpers/_common.scss";
+@import "1-helpers/_variable.scss";
+@import "1-helpers/_mixin.scss";
+
+
+//=======================================
+//          2 - BASICS FOLDER
+//=======================================
+@import "2-basics/_notification.scss";
+@import "2-basics/_search-bar.scss";
+@import "2-basics/_dropdown-menu.scss";
+@import "2-basics/_button.scss";
+@import "2-basics/_icon.scss";
+
+
+//=======================================
+//          3 - LAYOUTS FOLDER
+//=======================================
+@import "3-layouts/_header.scss";
+@import "3-layouts/_sidebar.scss";
+@import "3-layouts/_footer.scss";
+
+
+//=======================================
+//           4 - PAGES FOLDER
+//=======================================
+@import "4-pages/_index.scss";
+
+
+//=======================================
+//         5 - RESPONSIVE FOLDER
+//=======================================
+// XTRA LARGE DEVICE
+@import "5-responsive/xlg-device/_index.scss";
+
+// LARGE DEVICE
+@import "5-responsive/lg-device/_index.scss";
+
+// MEDIUM DEVICE
+@import "5-responsive/md-device/_index.scss";
+
+// SMALL DEVICE
+@import "5-responsive/sm-device/_index.scss";
+
+// XTRA SMALL DEVICE
+@import "5-responsive/xsm-device/_index.scss";

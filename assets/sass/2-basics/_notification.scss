@@ -1,0 +1,17 @@
+
+
+
+.notify__number {
+    position: absolute;
+    top: -6px;
+    right: -12px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0px 6px;
+    border-radius: 30px;
+    background: $brand__color;
+    color: $wh__color;
+    font-size: $xsm__size;
+    @include medium__typography;
+    box-shadow: $sm__shadow;
+}

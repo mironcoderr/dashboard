@@ -1,0 +1,23 @@
+
+
+
+.header__icon {
+    display: inline-block;
+    font-size: $xmd__size;
+    color: $wh__color;
+
+    &:hover {
+        color: $wh__color;
+        text-decoration: none;
+    }
+}
+
+.dots__icon {
+    color: $seven__color;
+    font-size: $sm__size;
+
+    &:hover {
+        color: $seven__color;
+        text-decoration: none;
+    }
+}

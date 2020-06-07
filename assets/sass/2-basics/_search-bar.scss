@@ -1,0 +1,47 @@
+
+
+// HEADER SEARCH BAR
+.search__bar {
+    padding: 8px 15px;
+    border-radius: 40px;
+    background: #7734e3;
+
+    i {
+        font-size: $md__size;
+        color: $e__color;
+        margin-right: 10px;
+    }
+
+    input {
+        width: 160px;
+        border: none;
+        color: $e__color;
+        background: transparent;
+
+        &::placeholder {
+            color: $e__color;
+            font-size: $xsm__size;
+            @include regular__typography;
+            text-transform: capitalize;
+        }
+    }
+}
+
+
+.language__search {
+    input {
+        width: 100%;
+        height: 40px;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: $wh__color;
+
+        &::placeholder {
+            color: $e__color;
+            font-size: $xsm__size;
+            @include regular__typography;
+            text-transform: capitalize;
+        }
+    }
+}

@@ -1,0 +1,147 @@
+
+
+// SIDEBAR PART
+#sidebar__part {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 100vh;
+    background: $brand__gradient;
+    box-shadow: $md__shadow;
+
+    .container {
+        padding: 0px;
+
+        .sidebar__logo {
+            text-align: center;
+            padding: 30px 0px;
+            border-bottom: 1px solid $border__color;
+            
+            a {
+                img {
+                    width: auto;
+                    height: 55px;
+                }
+            }
+        }
+
+        .sidebar__profile {
+            text-align: center;
+            padding: 30px 0px;
+
+            .profile__img {
+                position: relative;
+                display: inline-block;
+
+                a {
+                    border-radius: 50%;
+                    border: 3px solid $wh__color;
+                    box-shadow: $sm__shadow;
+    
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        border: 2px solid transparent;
+                    }
+                }
+
+                .profile__active {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 12px;
+                    width: 13px;
+                    height: 13px;
+                    border-radius: 50%;
+                    background: $active__color;
+                    border: 2px solid $wh__color;
+                    box-shadow: $sm__shadow;
+                }
+            }
+
+            .profile__content {
+                margin-top: 15px;
+
+                h3 {
+                    color: $wh__color;
+                    font-size: $xmd__size;
+                    @include medium__typography;
+                    text-transform: capitalize;
+                }
+    
+                p {
+                    @include p__property;
+                    color: $wh__color;
+                    margin-top: 5px;
+                }
+            }
+
+            .profile__icon {
+                @include flex__center;
+                justify-content: space-evenly;
+                margin-top: 12px;
+
+                a {
+                    color: $wh__color;
+                    font-size: $sm__size;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 38px;
+                    text-align: center;
+                    border-radius: 50%;
+                    border: 1px solid $border__color;
+                }
+            }
+        }
+
+        .sidebar__menu {
+            .sidebar__item {
+                .item__menu {
+                    @include dropdown__anchor;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $border__color;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: $sidebar__hover;
+                    }
+
+                    .item__anchor {
+                        @include flex__center;
+                        justify-content: start;
+    
+                        &:hover {
+                            color: $wh__color;
+                            text-decoration: none;
+                        }
+    
+                        i {
+                            color: $wh__color;
+                            font-size: $md__size;
+                            margin-right: 15px;
+                        }
+    
+                        p {
+                            color: $wh__color;
+                            font-size: $sm__size;
+                            @include medium__typography;
+                            text-transform: capitalize;
+                        }
+                    }
+    
+                    .item__arrow {
+                        color: $wh__color;
+                        font-size: 8px;
+                        transform: rotate(-90deg);
+    
+                        &:hover {
+                            color: $wh__color;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

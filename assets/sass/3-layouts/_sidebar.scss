@@ -11,7 +11,7 @@
     box-shadow: $md__shadow;
 
     .container {
-        padding: 0px;
+        padding: 0px !important;
 
         .sidebar__logo {
             text-align: center;
@@ -118,14 +118,14 @@
     
                         i {
                             color: $wh__color;
-                            font-size: $md__size;
+                            font-size: $xmd__size;
                             margin-right: 15px;
                         }
     
                         p {
                             color: $wh__color;
-                            font-size: $sm__size;
-                            @include medium__typography;
+                            font-size: $md__size;
+                            @include regular__typography;
                             text-transform: capitalize;
                         }
                     }

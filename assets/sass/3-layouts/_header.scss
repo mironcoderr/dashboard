@@ -2,7 +2,7 @@
 
 // HEADER PART
 #header__part {
-    padding: 15px 15px;
+    padding: 18px 0px;
     background: $brand__gradient;
     margin-left: 250px;
 
@@ -115,24 +115,12 @@
                 }
 
                 .header__user {
-                    @include flex__center;
                     cursor: pointer;
 
                     .user__img {
                         width: 35px;
                         height: 35px;
                         border-radius: 50%;
-                    }
-
-                    span {
-                        @include p__property;
-                        color: $wh__color;
-                        margin: 0px 5px;
-                    }
-
-                    i {
-                        font-size: 10px;
-                        color: $wh__color;
                     }
 
                     .dropdown__user {

@@ -1,4 +1,14 @@
 
+//For menu fixed when scrolling
+$(window).on('scroll', function(){
+  var scroll = $(this).scrollTop();
+  if(scroll > 30) {
+    $(".header__bar").addClass("header__fixed");
+  }else {
+    $(".header__bar").removeClass("header__fixed");
+  }
+})
+
 
 
 $(function() {  

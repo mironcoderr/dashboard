@@ -1,0 +1,67 @@
+
+
+.form__content {
+    margin-left: 250px;
+
+    // =====================================
+    //      DASHBOARD HEADING SECTION
+    //======================================
+    #heading__part {
+        margin: 26px 0px 23px;
+    
+        .container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+    
+            h1 {
+                color: $heading__color;
+                font-size: $lg__size;
+                @include medium__typography;
+                text-transform: capitalize;
+                margin-bottom: 7px !important;
+            }
+        }
+    }
+
+    // =====================================
+    //      DASHBOARD HEADING SECTION
+    //======================================
+    #input__part {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        background: $wh__color;
+        padding: 25px 0px;
+
+        .container {
+            .input__heading {
+                font-size: $xmd__size;
+                @include medium__typography;
+                text-transform: capitalize;
+                color: $heading__color;
+                margin-bottom: 10px !important;
+            }
+
+            .input__para {
+                font-size: $sm__size;
+                @include regular__typography;
+                color: $text__color;
+                margin-bottom: 25px !important;
+            }
+
+            .input__regular {
+                padding: 25px;
+                background: $wh__color;
+                box-shadow: $md__shadow;
+                border-radius: 8px;
+                margin-bottom: 25px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+    

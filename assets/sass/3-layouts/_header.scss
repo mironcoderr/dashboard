@@ -1,10 +1,21 @@
 
 
+// HEADER BAR FIXED
+.header__fixed {
+    position: fixed !important;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0px 5px 10px rgba(85, 85, 85, 0.3);
+}
+
+
 // HEADER PART
 #header__part {
     padding: 18px 0px;
     background: $brand__gradient;
-    margin-left: 250px;
+    padding-left: 250px;
 
     .container {
         @include flex__center;

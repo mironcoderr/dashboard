@@ -36,6 +36,8 @@ $brand__color: #ff4010;
 $text__color: #555555;
 $wh__color: #ffffff;
 $e__color: #eeeeee;
+$ef__color: #efefef;
+$gray__color: #f5f5f5;
 $active__color: #22cc00;
 $border__color: #ab77ff;
 $sidebar__hover: #7734e3;
@@ -48,7 +50,9 @@ $brand__gradient: linear-gradient(to right, #904bff, #8e47ff);
 //======================================
 $up__shadow: 0px -5px 30px 0px rgba(141, 71, 255, 0.5);
 $down__shadow: 0px 5px 0px 0px rgba(141, 71, 255, 0.5);
+$sidebar__box__shadow: 5px 0px 15px 0px rgba(0, 0, 0, 0.25);
+$card__box__shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
 
 $sm__shadow: 0px 5px 25px 10px rgba(0, 0, 0, 0.25);
-$md__shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.3);
+$md__shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
 $lg__shadow: 0px 10px 35px 5px rgba(156, 63, 63, 0.6);

@@ -4,7 +4,9 @@
 .main__content {
     margin-left: 250px;
 
-    // HEADING PART
+// =====================================
+//      DASHBOARD HEADING SECTION
+//======================================
     #heading__part {
         margin: 26px 0px 23px;
 
@@ -20,31 +22,13 @@
                 text-transform: capitalize;
                 margin-bottom: 7px !important;
             }
-
-            .breadcrumb {
-                background: none;
-                padding: 0px;
-
-                .breadcrumb-item {
-                    a {
-                        color: $text__color;
-                        font-size: $sm__size;
-                        @include regular__typography;
-                        text-transform: capitalize;
-                    }
-                }
-
-                .active {
-                    color: $seven__color;
-                    font-size: $sm__size;
-                    @include regular__typography;
-                    text-transform: capitalize;
-                }
-            }
         }
     }
 
-    // INFO CARD PART
+
+// =====================================
+//       INFORMATION CARD SECTION
+//======================================
     #info__part {
         margin-bottom: 25px;
 
@@ -52,53 +36,412 @@
             display: grid;
             grid-gap: 25px;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            grid-template-rows: 150px;
+            grid-template-rows: 130px;
         }
     }
 
 
-    // BAR CHART PART
-    #bar__part {
+// =====================================
+//         CHART CARD SECTION
+//======================================
+    #chart__part {
         margin-bottom: 25px;
 
         .container {
             display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, 1fr);
             grid-gap: 25px;
-            grid-template-columns: 12;
-            grid-template-rows: auto;
-
+            height: 500px;
+            
             .bar__chart {
-                grid-column: 1 / 7;
-                grid-row: auto;
+                grid-column: 1 / 9;
+                grid-row: 1 / 13;
                 background: $wh__color;
                 border-radius: 8px;
-                padding: 20px 0px 18px 30px;
+                padding: 30px;
                 box-shadow: $md__shadow;
-                height: 400px;
 
-                #bar-chart {
-                    width: 100%;
-                    height: 100%;
+                .earning__content {
+                    @include flex__center;
+                    justify-content: space-evenly;
+                    margin-top: 25px;
+
+                    ul {
+                        li {
+                            &:nth-child(1) {
+                                color: $heading__color;
+                                font-size: $lg__size;
+                                @include regular__typography;
+                            }
+
+                            &:nth-child(2) {
+                                color: $text__color;
+                                font-size: $sm__size;
+                                @include regular__typography;
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
                 }
             }
 
             .doughnut__chart {
-                grid-column: 7 / 13;
-                grid-row: auto;
+                grid-column: 9 / 13;
+                grid-row: 1 / 13;
                 background: $wh__color;
                 border-radius: 8px;
                 box-shadow: $md__shadow;
-                height: 400px;
+                padding: 25px;
             }
         }
     }
 
 
+// =====================================
+//   LATEST TRANSACTION CARD SECTION
+//======================================
+#latest__part {
+    margin: 0px 25px 25px;
+
+    .container {
+        border-radius: 8px;
+        background: $wh__color;
+        box-shadow: $md__shadow;
+        padding: 25px !important;
+        
+        .heading__part {
+            margin-bottom: 25px;
+        }
+
+        .latest__table {
+            .latest__cover {
+                .latest__headline {
+                    background: $gray__color;
+                    
+                    li {
+                        font-weight: $medium__weight !important;
+                    }
+                }
+    
+                ul {
+                    @include flex__center;
+                    justify-content: space-between;
+                    border-radius: 3px;
+                    padding: 0px 15px;
+                    border-bottom: 1px solid $ef__color;
+    
+                    li {
+                        color: $heading__color;
+                        font-size: $sm__size;
+                        @include regular__typography;
+                        text-transform: capitalize;
+                        padding: 15px 0px 13px;
+    
+                        .latest__id {
+                            color: $heading__color;
+                            font-weight: $medium__weight;
+                        }
+
+                        .latest__action {
+                            display: inline-block;
+                            margin: 0px 5px;
+                            
+                            &:nth-child(1) {
+                                svg {
+                                    color: $sidebar__hover;
+                                    width: 16px;
+                                    height: 16px;
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                svg {
+                                    color: #e72a1c;
+                                    width: 16px;
+                                    height: 16px;
+                                }
+                            }
+                        }
+    
+                        .latest__view {
+                            padding: 3px 10px;
+                            border-radius: 25px;
+                            background: $sidebar__hover;
+                            color: $wh__color;
+                            font-size: 13px;
+                            display: inline-block;
+                        }
+    
+                        &:nth-child(1) {
+                            width: 30px;
+                        }
+    
+                        &:nth-child(2) {
+                            width: 80px;
+                        }
+    
+                        &:nth-child(3) {
+                            width: 130px;
+                        }
+    
+                        &:nth-child(4) {
+                            width: 120px;
+                        }
+    
+                        &:nth-child(5) {
+                            width: 80px;
+                        }
+    
+                        &:nth-child(6) {
+                            width: 120px;
+                            padding: 8px 0px;
+                        }
+    
+                        &:nth-child(7) {
+                            width: 130px;
+                        }
+    
+                        &:nth-child(8) {
+                            width: 100px;
+                        }
+
+                        &:nth-child(9) {
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
+// =====================================
+//         LAST CARD SECTION
+//======================================
+#last__part {
+    margin-bottom: 25px;
 
+    .container {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: 400px;
 
+        .country__part {
+            padding: 15px 15px;
+            border-radius: 8px;
+            background: $wh__color;
+            box-shadow: $md__shadow;
 
+            .heading {
+                margin-bottom: 8px;
+            }
+
+            .country__sub__text {
+                color: $text__color;
+                font-size: $sm__size;
+                @include regular__typography;
+                margin-bottom: 15px !important;
+            }
+
+            .country__card {
+                height: 270px;
+                padding: 0px 10px;
+
+                ul {
+                    @include flex__center;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $ef__color;
+
+                    li {
+                        padding: 15px 0px 13px;
+
+                        &:nth-child(1) {
+                            width: 180px;
+                        }
+    
+                        &:nth-child(2) {
+                            width: 50px;
+                        }
+
+                        &:nth-child(3) {
+                            width: 80px;
+                            text-align: right;
+                        }
+                    }
+
+                    .country__name {
+                        @include flex__center;
+                        justify-content: start;
+
+                        a {
+                            img {
+                                width: 25px;
+                                height: 25px;
+                                border-radius: 50%;
+                                margin-right: 15px;
+                                box-shadow: $card__box__shadow;
+                            }
+                        }
+
+                        h3 {
+                            color: $heading__color;
+                            font-size: $sm__size;
+                            @include medium__typography;
+                            text-transform: capitalize;
+                        }
+                    }
+
+                    .country__order {
+                        color: $heading__color;
+                        font-size: $sm__size;
+                        @include medium__typography;
+                    }
+
+                    .country__revenue {
+                        color: $heading__color;
+                        font-size: $sm__size;
+                        @include medium__typography;
+                    }
+                }
+            }
+        }
+
+        .traffic__part {
+            padding: 15px 15px;
+            border-radius: 8px;
+            background: $wh__color;
+            box-shadow: $md__shadow;
+
+            .traffic__heading {
+                text-align: center;
+                padding: 25px 0px;
+                border-bottom: 1px solid $e__color;
+
+                h3 {
+                    color: $heading__color;
+                    font-size: $xlg__size;
+                    @include regular__typography;
+                    margin-bottom: 15px !important;
+                }
+
+                p {
+                    color: $seven__color;
+                    font-size: $md__size;
+                    @include regular__typography;
+                    text-transform: capitalize;
+                }
+            }
+
+            .traffic__list {
+                ul {
+                    display: block;
+
+                    li {
+                        padding: 12px 15px 8px;
+                        width: 100%;
+                        @include flex__center;
+                        justify-content: space-between;
+                        border-bottom: 1px solid $e__color;
+
+                        &:last-child {
+                            border-bottom: none;
+                        }
+
+                        h3 {
+                            color: $heading__color;
+                            font-size: $sm__size;
+                            @include regular__typography;
+                            text-transform: capitalize;
+                            margin-left: 25px;
+                            position: relative;
+
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                top: 50%;
+                                left: -25px;
+                                transform: translateY(-50%);
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 50%;
+                                background: $brand__gradient;
+                                box-shadow: $card__box__shadow;
+                            }
+                        }
+        
+                        p {
+                            color: $heading__color;
+                            font-size: $sm__size;
+                            @include regular__typography;
+                        }
+                    }
+                }
+            }
+        }
+
+        .seller__part {
+            padding: 15px 15px;
+            border-radius: 8px;
+            background: $wh__color;
+            box-shadow: $md__shadow;
+
+            .seller__card {
+                height: 330px;
+
+                ul {
+                    display: block;
+
+                    li {
+                        @include flex__center;
+                        justify-content: space-between;
+                        padding: 12px 15px;
+                        border-bottom: 1px solid $e__color;
+
+                        .seller__info {
+                            @include flex__center;
+                            justify-content: start;
+
+                            a {
+                                img {
+                                    width: 45px;
+                                    height: 45px;
+                                    border-radius: 50%;
+                                    margin-right: 15px;
+                                    box-shadow: $card__box__shadow;
+                                }
+                            }
+
+                            .seller__name {
+                                h3 {
+                                    color: $heading__color;
+                                    font-size: $sm__size;
+                                    @include medium__typography;
+                                    text-transform: capitalize;
+                                    margin-bottom: 2px !important;
+                                }
+
+                                p {
+                                    color: $heading__color;
+                                    font-size: $xsm__size;
+                                    @include regular__typography;
+                                }
+                            }
+                        }
+
+                        .seller__amount {
+                            color: $heading__color;
+                            font-size: $sm__size;
+                            @include medium__typography;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 

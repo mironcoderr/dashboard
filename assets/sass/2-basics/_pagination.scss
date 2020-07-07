@@ -1,0 +1,42 @@
+
+
+
+.pagination {
+    margin-top: 25px;
+    align-items: center;
+    justify-content: flex-end;
+
+    .page-item {
+        margin: 0px 5px;
+
+        &:first-child {
+            .page-link {
+                border-top-left-radius: 50%;
+                border-bottom-left-radius: 50%;
+            }
+        }
+
+        &:last-child {
+            .page-link {
+                border-top-right-radius: 50%;
+                border-bottom-right-radius: 50%;
+            }
+        }
+
+        .page-link {
+            padding: 0px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            color: $seven__color;
+            font-size: $sm__size;
+            @include regular__typography;
+
+            span {
+                font-size: $md__size;
+            }
+        }
+    }
+}

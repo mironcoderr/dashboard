@@ -1,0 +1,23 @@
+
+
+
+.breadcrumb {
+    background: none !important;
+    padding: 0px !important;
+
+    .breadcrumb-item {
+        a {
+            color: $text__color;
+            font-size: $sm__size;
+            @include regular__typography;
+            text-transform: capitalize;
+        }
+    }
+
+    .active {
+        color: $seven__color;
+        font-size: $sm__size;
+        @include regular__typography;
+        text-transform: capitalize;
+    }
+}

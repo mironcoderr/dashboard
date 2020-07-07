@@ -41,7 +41,7 @@
     .info__heading {
         @include flex__center;
         justify-content: space-between;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
 
         h3 {
             color: $wh__color;
@@ -73,7 +73,7 @@
                 &:nth-child(1) {
                     color: $wh__color;
                     font-size: $lg__size;
-                    @include medium__typography;
+                    @include regular__typography;
                 }
 
                 &:nth-child(2) {

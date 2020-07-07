@@ -2,7 +2,7 @@
 
 
 $(function() {  
-    $(".language__menu, .notify__menu, .message__menu, #sidebar__part").niceScroll({cursorcolor:"#8747ee"});
+    $(".language__menu, .notify__menu, .message__menu, #sidebar__part, .country__card, .seller__card").niceScroll({cursorcolor:"#8747ee"});
 });
 
 
@@ -10,11 +10,11 @@ $(function() {
 new Chart(document.getElementById("bar-chart"), {
     type: 'bar',
     data: {
-      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "jun", "Jul", "Agu", "Sep", "Oct", "Nov", "Dec"],
       datasets: [
         {
           label: "Population (millions)",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850", "#092381"],
           data: [2478,5267,734,784,433]
         }
       ]

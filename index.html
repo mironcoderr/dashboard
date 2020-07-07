@@ -571,26 +571,431 @@
 
 
         <!------------------------------
-              BAR CHART PART START
+                CHART PART START
         -------------------------------->
-        <section id="bar__part">
+        <section id="chart__part">
             <div class="container">
                 <div class="bar__chart">
-                    <h3>statistics</h3>
-                    
+                    <div class="heading">
+                        <h3>Revenue statistics</h3>
+                        <div class="heading__dots">
+                            <a class="dots" href="#"><i class="flaticon-menu-1"></i></a>
+                            <ul class="dots__menu">
+                                <li><a href="#">sales report</a></li>
+                                <li><a href="#">action task</a></li>
+                                <li><a href="#">remove data</a></li>
+                                <li><a href="#">cancel card</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <canvas id="bar-chart"></canvas>
+                    <div class="earning__content">
+                        <ul>
+                            <li>$24,289</li>
+                            <li>this month</li>
+                        </ul>
+                        <ul>
+                            <li>$19,821</li>
+                            <li>this year</li>
+                        </ul>
+                        <ul>
+                            <li>$98,390</li>
+                            <li>previous year</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="doughnut__chart">
+                    <div class="heading">
+                        <h3>doughnut chart</h3>
+                        <div class="heading__dots">
+                            <a class="dots" href="#"><i class="flaticon-menu-1"></i></a>
+                            <ul class="dots__menu">
+                                <li><a href="#">sales report</a></li>
+                                <li><a href="#">action task</a></li>
+                                <li><a href="#">remove data</a></li>
+                                <li><a href="#">cancel card</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <canvas id="doughnut-chart"></canvas>
                 </div>
             </div>
         </section>
         <!------------------------------
-              BAR CHART PART END
+               CHART PART END
+        -------------------------------->
+
+
+        <!------------------------------
+               LATEST PART START
+        -------------------------------->
+        <section id="latest__part">
+            <div class="container">
+                <div class="heading">
+                    <h3>Latest Transaction</h3>
+                    <div class="heading__dots">
+                        <a class="dots" href="#"><i class="flaticon-menu-1"></i></a>
+                        <ul class="dots__menu">
+                            <li><a href="#">sales report</a></li>
+                            <li><a href="#">action task</a></li>
+                            <li><a href="#">remove data</a></li>
+                            <li><a href="#">cancel card</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="latest__table">
+                    <div class="latest__cover">
+                        <ul class="latest__headline">
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                </div>
+                            </li>
+                            <li>order id</li>
+                            <li>Billing Name</li>
+                            <li>date</li>
+                            <li>amount</li>
+                            <li>Payment Status</li>
+                            <li>Payment Method</li>
+                            <li>action</li>
+                            <li>View Details</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                </div>
+                            </li>
+                            <li><a class="latest__id" href="#">#SK2540</a></li>
+                            <li>Neal Matthews</li>
+                            <li>08 Nov, 2020</li>
+                            <li>$400</li>
+                            <li>Chargeback</li>
+                            <li>Mastercard</li>
+                            <li>
+                                <a class="latest__action" href="#"><i class="far fa-edit"></i></a>
+                                <a class="latest__action" href="#"><i class="far fa-trash-alt"></i></a>
+                            </li>
+                            <li><a class="latest__view" href="#">View Details</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                </div>
+                            </li>
+                            <li><a class="latest__id" href="#">#SK2540</a></li>
+                            <li>Neal Matthews</li>
+                            <li>07 Oct, 2019</li>
+                            <li>$400</li>
+                            <li>Chargeback</li>
+                            <li>Mastercard</li>
+                            <li>
+                                <a class="latest__action" href="#"><i class="far fa-edit"></i></a>
+                                <a class="latest__action" href="#"><i class="far fa-trash-alt"></i></a>
+                            </li>
+                            <li><a class="latest__view" href="#">View Details</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                </div>
+                            </li>
+                            <li><a class="latest__id" href="#">#SK2540</a></li>
+                            <li>Neal Matthews</li>
+                            <li>07 Oct, 2019</li>
+                            <li>$400</li>
+                            <li>Chargeback</li>
+                            <li>Mastercard</li>
+                            <li>
+                                <a class="latest__action" href="#"><i class="far fa-edit"></i></a>
+                                <a class="latest__action" href="#"><i class="far fa-trash-alt"></i></a>
+                            </li>
+                            <li><a class="latest__view" href="#">View Details</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                </div>
+                            </li>
+                            <li><a class="latest__id" href="#">#SK2540</a></li>
+                            <li>Neal Matthews</li>
+                            <li>07 Oct, 2019</li>
+                            <li>$400</li>
+                            <li>Chargeback</li>
+                            <li>Mastercard</li>
+                            <li>
+                                <a class="latest__action" href="#"><i class="far fa-edit"></i></a>
+                                <a class="latest__action" href="#"><i class="far fa-trash-alt"></i></a>
+                            </li>
+                            <li><a class="latest__view" href="#">View Details</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                </div>
+                            </li>
+                            <li><a class="latest__id" href="#">#SK2540</a></li>
+                            <li>Neal Matthews</li>
+                            <li>07 Oct, 2019</li>
+                            <li>$400</li>
+                            <li>Chargeback</li>
+                            <li>Mastercard</li>
+                            <li>
+                                <a class="latest__action" href="#"><i class="far fa-edit"></i></a>
+                                <a class="latest__action" href="#"><i class="far fa-trash-alt"></i></a>
+                            </li>
+                            <li><a class="latest__view" href="#">View Details</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">18</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!------------------------------
+               LATEST PART END
+        -------------------------------->
+
+
+        <!------------------------------
+             LAST SECTION PART START
+        -------------------------------->
+        <section id="last__part">
+            <div class="container">
+                <div class="country__part">
+                    <div class="heading">
+                        <h3>top countries</h3>
+                        <div class="heading__dots">
+                            <a class="dots" href="#"><i class="flaticon-menu-1"></i></a>
+                            <ul class="dots__menu">
+                                <li><a href="#">sales report</a></li>
+                                <li><a href="#">action task</a></li>
+                                <li><a href="#">remove data</a></li>
+                                <li><a href="#">cancel card</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="country__sub__text">Sales perfomance order and revenue based by country categories.</p>
+                    <div class="country__card">
+                        <ul>
+                            <li class="country__name">
+                                <a href="#"><img src="assets/images/country-1.jpg" alt="country-1"></a>
+                                <h3>germany</h3> 
+                            </li>
+                            <li class="country__order">23</li>
+                            <li class="country__revenue">$7,819</li>
+                        </ul>
+                        <ul>
+                            <li class="country__name">
+                                <a href="#"><img src="assets/images/country-2.jpg" alt="country-2"></a>
+                                <h3>italy</h3> 
+                            </li>
+                            <li class="country__order">23</li>
+                            <li class="country__revenue">$7,819</li>
+                        </ul>
+                        <ul>
+                            <li class="country__name">
+                                <a href="#"><img src="assets/images/country-3.jpg" alt="country-3"></a>
+                                <h3>bangladesh</h3> 
+                            </li>
+                            <li class="country__order">23</li>
+                            <li class="country__revenue">$7,819</li>
+                        </ul>
+                        <ul>
+                            <li class="country__name">
+                                <a href="#"><img src="assets/images/country-4.jpg" alt="country-4"></a>
+                                <h3>india</h3> 
+                            </li>
+                            <li class="country__order">23</li>
+                            <li class="country__revenue">$7,819</li>
+                        </ul>
+                        <ul>
+                            <li class="country__name">
+                                <a href="#"><img src="assets/images/country-5.jpg" alt="country-5"></a>
+                                <h3>united states</h3> 
+                            </li>
+                            <li class="country__order">23</li>
+                            <li class="country__revenue">$7,819</li>
+                        </ul>
+                        <ul>
+                            <li class="country__name">
+                                <a href="#"><img src="assets/images/country-6.jpg" alt="country-6"></a>
+                                <h3>saudi arabia</h3> 
+                            </li>
+                            <li class="country__order">23</li>
+                            <li class="country__revenue">$7,819</li>
+                        </ul>
+                        <ul>
+                            <li class="country__name">
+                                <a href="#"><img src="assets/images/country-7.jpg" alt="country-7"></a>
+                                <h3>spain</h3> 
+                            </li>
+                            <li class="country__order">23</li>
+                            <li class="country__revenue">$7,819</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="traffic__part">
+                    <div class="heading">
+                        <h3>Traffic source</h3>
+                        <div class="heading__dots">
+                            <a class="dots" href="#"><i class="flaticon-menu-1"></i></a>
+                            <ul class="dots__menu">
+                                <li><a href="#">sales report</a></li>
+                                <li><a href="#">action task</a></li>
+                                <li><a href="#">remove data</a></li>
+                                <li><a href="#">cancel card</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="traffic__heading">
+                        <h3>362,897</h3>
+                        <p>daily visitor</p>
+                    </div>
+                    <div class="traffic__list">
+                        <ul>
+                            <li>
+                                <h3>direct visit</h3>
+                                <p>42.76%</p>
+                            </li>
+                            <li>
+                                <h3>organic search</h3>
+                                <p>42.76%</p>
+                            </li>
+                            <li>
+                                <h3>refferel website</h3>
+                                <p>42.76%</p>
+                            </li>
+                            <li>
+                                <h3>social network</h3>
+                                <p>42.76%</p>
+                            </li>
+                            <li>
+                                <h3>other</h3>
+                                <p>42.76%</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="seller__part">
+                    <div class="heading">
+                        <h3>best seller</h3>
+                        <div class="heading__dots">
+                            <a class="dots" href="#"><i class="flaticon-menu-1"></i></a>
+                            <ul class="dots__menu">
+                                <li><a href="#">sales report</a></li>
+                                <li><a href="#">action task</a></li>
+                                <li><a href="#">remove data</a></li>
+                                <li><a href="#">cancel card</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="seller__card">
+                        <ul>
+                            <li>
+                                <div class="seller__info">
+                                    <a href="#"><img src="assets/images/user.jpg" alt="user"></a>
+                                    <div class="seller__name">
+                                        <h3>irfan ahmed</h3>
+                                        <p>02 feb 2020</p>
+                                    </div>
+                                </div>
+                                <h4 class="seller__amount">$289,326</h4>
+                            </li>
+                            <li>
+                                <div class="seller__info">
+                                    <a href="#"><img src="assets/images/user.jpg" alt="user"></a>
+                                    <div class="seller__name">
+                                        <h3>irfan ahmed</h3>
+                                        <p>02 feb 2020</p>
+                                    </div>
+                                </div>
+                                <h4 class="seller__amount">$289,326</h4>
+                            </li>
+                            <li>
+                                <div class="seller__info">
+                                    <a href="#"><img src="assets/images/user.jpg" alt="user"></a>
+                                    <div class="seller__name">
+                                        <h3>irfan ahmed</h3>
+                                        <p>02 feb 2020</p>
+                                    </div>
+                                </div>
+                                <h4 class="seller__amount">$289,326</h4>
+                            </li>
+                            <li>
+                                <div class="seller__info">
+                                    <a href="#"><img src="assets/images/user.jpg" alt="user"></a>
+                                    <div class="seller__name">
+                                        <h3>irfan ahmed</h3>
+                                        <p>02 feb 2020</p>
+                                    </div>
+                                </div>
+                                <h4 class="seller__amount">$289,326</h4>
+                            </li>
+                            <li>
+                                <div class="seller__info">
+                                    <a href="#"><img src="assets/images/user.jpg" alt="user"></a>
+                                    <div class="seller__name">
+                                        <h3>irfan ahmed</h3>
+                                        <p>02 feb 2020</p>
+                                    </div>
+                                </div>
+                                <h4 class="seller__amount">$289,326</h4>
+                            </li>
+                            <li>
+                                <div class="seller__info">
+                                    <a href="#"><img src="assets/images/user.jpg" alt="user"></a>
+                                    <div class="seller__name">
+                                        <h3>irfan ahmed</h3>
+                                        <p>02 feb 2020</p>
+                                    </div>
+                                </div>
+                                <h4 class="seller__amount">$289,326</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------
+             LAST SECTION PART END
         -------------------------------->
     </main>
     <!--===================================
              MAIN CONTENT PART END
+    =====================================-->
+
+
+    <!--===================================
+                FOOTER PART START
+    =====================================-->
+    <section id="footer__part">
+        <div class="container">
+            <p>copyright &copy; 2020</p>
+            <p>all rights reserved by <a href="#">icon infotech ltd</a></p>
+        </div>
+    </section>
+    <!--===================================
+                FOOTER PART END
     =====================================-->
 
 

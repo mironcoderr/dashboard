@@ -1,0 +1,24 @@
+
+
+
+#footer__part {
+    padding: 18px 0px;
+    background: $brand__gradient;
+    margin-left: 250px;
+
+    .container {
+        @include flex__center;
+        justify-content: space-between;
+
+        p {
+            color: #daceff;
+            font-size: 14px;
+            @include regular__typography;
+            text-transform: capitalize;
+
+            a {
+                color: $wh__color;
+            }
+        }
+    }
+}

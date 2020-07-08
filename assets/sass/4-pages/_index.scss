@@ -1,8 +1,8 @@
 
 
 
-.main__content {
-    margin-left: 250px;
+#main__content {
+    padding-left: 250px;
 
 // =====================================
 //      DASHBOARD HEADING SECTION
@@ -11,16 +11,18 @@
         margin: 26px 0px 23px;
 
         .container {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
+            .heading__content {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
 
-            h1 {
-                color: $heading__color;
-                font-size: $lg__size;
-                @include medium__typography;
-                text-transform: capitalize;
-                margin-bottom: 7px !important;
+                h1 {
+                    color: $heading__color;
+                    font-size: $lg__size;
+                    @include medium__typography;
+                    text-transform: capitalize;
+                    margin-bottom: 7px !important;
+                }
             }
         }
     }
@@ -30,14 +32,7 @@
 //       INFORMATION CARD SECTION
 //======================================
     #info__part {
-        margin-bottom: 25px;
-
-        .container {
-            display: grid;
-            grid-gap: 25px;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            grid-template-rows: 130px;
-        }
+        margin-bottom: 30px;
     }
 
 
@@ -45,22 +40,16 @@
 //         CHART CARD SECTION
 //======================================
     #chart__part {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
 
         .container {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: repeat(12, 1fr);
-            grid-gap: 25px;
-            height: 500px;
             
             .bar__chart {
-                grid-column: 1 / 9;
-                grid-row: 1 / 13;
                 background: $wh__color;
                 border-radius: 8px;
                 padding: 30px;
                 box-shadow: $md__shadow;
+                height: 500px;
 
                 .earning__content {
                     @include flex__center;
@@ -87,12 +76,11 @@
             }
 
             .doughnut__chart {
-                grid-column: 9 / 13;
-                grid-row: 1 / 13;
                 background: $wh__color;
                 border-radius: 8px;
                 box-shadow: $md__shadow;
                 padding: 25px;
+                height: 500px;
             }
         }
     }
@@ -102,112 +90,114 @@
 //   LATEST TRANSACTION CARD SECTION
 //======================================
 #latest__part {
-    margin: 0px 25px 25px;
+    margin-bottom: 30px;
 
     .container {
-        border-radius: 8px;
-        background: $wh__color;
-        box-shadow: $md__shadow;
-        padding: 25px !important;
-        
-        .heading__part {
-            margin-bottom: 25px;
-        }
+        .latest__content {
+            border-radius: 8px;
+            background: $wh__color;
+            box-shadow: $md__shadow;
+            padding: 25px !important;
 
-        .latest__table {
-            .latest__cover {
-                .latest__headline {
-                    background: $gray__color;
-                    
-                    li {
-                        font-weight: $medium__weight !important;
+            .heading__part {
+                margin-bottom: 25px;
+            }
+    
+            .latest__table {
+                .latest__cover {
+                    .latest__headline {
+                        background: $gray__color;
+                        
+                        li {
+                            font-weight: $medium__weight !important;
+                        }
                     }
-                }
-    
-                ul {
-                    @include flex__center;
-                    justify-content: space-between;
-                    border-radius: 3px;
-                    padding: 0px 15px;
-                    border-bottom: 1px solid $ef__color;
-    
-                    li {
-                        color: $heading__color;
-                        font-size: $sm__size;
-                        @include regular__typography;
-                        text-transform: capitalize;
-                        padding: 15px 0px 13px;
-    
-                        .latest__id {
+        
+                    ul {
+                        @include flex__center;
+                        justify-content: space-between;
+                        border-radius: 3px;
+                        padding: 0px 15px;
+                        border-bottom: 1px solid $ef__color;
+        
+                        li {
                             color: $heading__color;
-                            font-weight: $medium__weight;
-                        }
-
-                        .latest__action {
-                            display: inline-block;
-                            margin: 0px 5px;
-                            
+                            font-size: $sm__size;
+                            @include regular__typography;
+                            text-transform: capitalize;
+                            padding: 15px 0px 13px;
+        
+                            .latest__id {
+                                color: $heading__color;
+                                font-weight: $medium__weight;
+                            }
+    
+                            .latest__action {
+                                display: inline-block;
+                                margin: 0px 5px;
+                                
+                                &:nth-child(1) {
+                                    svg {
+                                        color: $sidebar__hover;
+                                        width: 16px;
+                                        height: 16px;
+                                    }
+                                }
+    
+                                &:nth-child(2) {
+                                    svg {
+                                        color: #e72a1c;
+                                        width: 16px;
+                                        height: 16px;
+                                    }
+                                }
+                            }
+        
+                            .latest__view {
+                                padding: 3px 10px;
+                                border-radius: 25px;
+                                background: $sidebar__hover;
+                                color: $wh__color;
+                                font-size: 13px;
+                                display: inline-block;
+                            }
+        
                             &:nth-child(1) {
-                                svg {
-                                    color: $sidebar__hover;
-                                    width: 16px;
-                                    height: 16px;
-                                }
+                                width: 30px;
                             }
-
+        
                             &:nth-child(2) {
-                                svg {
-                                    color: #e72a1c;
-                                    width: 16px;
-                                    height: 16px;
-                                }
+                                width: 80px;
                             }
-                        }
+        
+                            &:nth-child(3) {
+                                width: 130px;
+                            }
+        
+                            &:nth-child(4) {
+                                width: 120px;
+                            }
+        
+                            &:nth-child(5) {
+                                width: 80px;
+                            }
+        
+                            &:nth-child(6) {
+                                width: 120px;
+                                padding: 8px 0px;
+                            }
+        
+                            &:nth-child(7) {
+                                width: 130px;
+                            }
+        
+                            &:nth-child(8) {
+                                width: 100px;
+                            }
     
-                        .latest__view {
-                            padding: 3px 10px;
-                            border-radius: 25px;
-                            background: $sidebar__hover;
-                            color: $wh__color;
-                            font-size: 13px;
-                            display: inline-block;
-                        }
-    
-                        &:nth-child(1) {
-                            width: 30px;
-                        }
-    
-                        &:nth-child(2) {
-                            width: 80px;
-                        }
-    
-                        &:nth-child(3) {
-                            width: 130px;
-                        }
-    
-                        &:nth-child(4) {
-                            width: 120px;
-                        }
-    
-                        &:nth-child(5) {
-                            width: 80px;
-                        }
-    
-                        &:nth-child(6) {
-                            width: 120px;
-                            padding: 8px 0px;
-                        }
-    
-                        &:nth-child(7) {
-                            width: 130px;
-                        }
-    
-                        &:nth-child(8) {
-                            width: 100px;
-                        }
-
-                        &:nth-child(9) {
-                            width: 100px;
+                            &:nth-child(9) {
+                                width: 100px;
+                            }
                         }
                     }
                 }
@@ -221,15 +211,12 @@
 //         LAST CARD SECTION
 //======================================
 #last__part {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 
     .container {
-        display: grid;
-        grid-gap: 25px;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-template-rows: 400px;
 
         .country__part {
+            height: 400px;
             padding: 15px 15px;
             border-radius: 8px;
             background: $wh__color;
@@ -310,6 +297,7 @@
         }
 
         .traffic__part {
+            height: 400px;
             padding: 15px 15px;
             border-radius: 8px;
             background: $wh__color;
@@ -383,6 +371,7 @@
         }
 
         .seller__part {
+            height: 400px;
             padding: 15px 15px;
             border-radius: 8px;
             background: $wh__color;

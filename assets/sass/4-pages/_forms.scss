@@ -1,67 +1,180 @@
 
 
-.form__content {
-    margin-left: 250px;
 
-    // =====================================
-    //      DASHBOARD HEADING SECTION
-    //======================================
-    #heading__part {
-        margin: 26px 0px 23px;
-    
-        .container {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-    
-            h1 {
+// =====================================
+//         INLINE FORM SECTION
+//======================================
+#inline__part {
+    margin-bottom: 30px;
+
+    .container {
+        .inline__form {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background: $wh__color;
+            box-shadow: $md__shadow;
+            padding: 35px 35px;
+
+            h3 {
                 color: $heading__color;
-                font-size: $lg__size;
-                @include medium__typography;
-                text-transform: capitalize;
-                margin-bottom: 7px !important;
-            }
-        }
-    }
-
-    // =====================================
-    //      DASHBOARD HEADING SECTION
-    //======================================
-    #input__part {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        background: $wh__color;
-        padding: 25px 0px;
-
-        .container {
-            .input__heading {
                 font-size: $xmd__size;
                 @include medium__typography;
                 text-transform: capitalize;
-                color: $heading__color;
-                margin-bottom: 10px !important;
-            }
-
-            .input__para {
-                font-size: $sm__size;
-                @include regular__typography;
-                color: $text__color;
                 margin-bottom: 25px !important;
             }
 
-            .input__regular {
-                padding: 25px;
-                background: $wh__color;
-                box-shadow: $md__shadow;
+            .form-inline {
+                @include flex__center;
+                justify-content: space-between;
+                padding: 25px 25px;
                 border-radius: 8px;
-                margin-bottom: 25px;
+                background: $ef__color;
 
-                &:last-child {
-                    margin-bottom: 0px;
+                .form-control {
+                    width: 300px;
+                    height: 40px;
+
+                    &::placeholder {
+                        color: $seven__color;
+                        font-size: $sm__size;
+                        @include regular__typography;
+                    }
+                }
+
+                .btn {
+                    padding: 8px 35px;
+                    border-radius: 8px;
+                    box-shadow: $card__box__shadow;
                 }
             }
         }
     }
 }
-    
+
+
+
+// =====================================
+//         CONTROL FORM SECTION
+//======================================
+#control__part {
+    margin-bottom: 30px;
+
+    .container {
+        .control__form {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background: $wh__color;
+            box-shadow: $md__shadow;
+            padding: 35px 35px;
+
+            h3 {
+                color: $heading__color;
+                font-size: $xmd__size;
+                @include medium__typography;
+                text-transform: capitalize;
+                margin-bottom: 25px !important;
+            }
+
+            form {
+                padding: 25px 25px;
+                border-radius: 8px;
+                background: $ef__color;
+
+                .form-group {
+                    margin-bottom: 22px;
+
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+
+                    label {
+                        color: $text__color;
+                        font-size: $sm__size;
+                        @include medium__typography;
+                        text-transform: capitalize;
+                    }
+
+                    input {
+                        height: 40px;
+
+                        &::placeholder {
+                            color: $seven__color;
+                            font-size: $sm__size;
+                            @include regular__typography;
+                        }
+                    }
+
+                    .custom-file {
+                        .custom-file-label {
+                            height: 40px;
+                            color: $seven__color;
+                            font-size: $sm__size;
+                            @include regular__typography;
+                            padding: .55rem .75rem;
+
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .form-control-range {
+                        height: 15px !important;
+                    }
+
+                    .form-check {
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+
+                        .form-check-input {
+                            margin-top: 0px;
+                        }
+                    }
+
+                    #inputState {
+                        height: 40px !important;
+                    }
+                }
+
+                .btn {
+                    padding: 8px 35px;
+                    border-radius: 8px;
+                    box-shadow: $card__box__shadow;
+                }
+            }
+
+            .control__compo__cover {
+                padding: 25px 25px;
+                border-radius: 8px;
+                background: $ef__color;
+                margin-bottom: 50px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                .custom-control {
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+
+                    .custom-control-label {
+                        color: $heading__color;
+                        font-size: $md__size;
+                        @include regular__typography;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+
+        .control__gape {
+            margin-top: 30px;
+        }
+    }
+}

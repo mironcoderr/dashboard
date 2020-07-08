@@ -440,6 +440,36 @@
 
 
 // SIDEBAR DROPDOWN MENU
+.sidebar__dropdown {
+    background: $sidebar__hover;
+    border-radius: 8px;
+
+    .dropdown__item {
+        @include flex__center;
+        justify-content: start;
+        padding: 10px 25px 10px 40px;
+        border-radius: 8px;
+
+        &:hover {
+            background: #6c2cd4;
+        }
+
+        i {
+            color: $wh__color;
+            font-size: 8px;
+            transform: rotate(-90deg);
+            margin-right: 15px;
+        }
+
+        p {
+            color: $wh__color;
+            font-size: $sm__size;
+            @include regular__typography;
+            text-transform: capitalize;
+        }
+    }
+}
+
 .item__dropdown {
     display: flex;
     align-items: flex-start;

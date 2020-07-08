@@ -4,7 +4,7 @@
 #footer__part {
     padding: 18px 0px;
     background: $brand__gradient;
-    margin-left: 250px;
+    padding-left: 250px;
 
     .container {
         @include flex__center;

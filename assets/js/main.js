@@ -10,7 +10,19 @@ $(window).on('scroll', function(){
 })
 
 
+// For dropdown sidebar menu collaspe
+jQuery(document).ready(function($){
+  var panels = $(".sidebar__dropdown").hide();
+  
+   $(".sidebar__link").click(function(){
+       var $this = $(this);
+       panels.slideUp();
+       $this.next().slideDown();
+   });
+});
 
+
+// Scroll plugin for content div
 $(function() {  
     $(".language__menu, .notify__menu, .message__menu, #sidebar__part, .country__card, .seller__card").niceScroll({cursorcolor:"#8747ee"});
 });
@@ -59,3 +71,14 @@ new Chart(document.getElementById("doughnut-chart"), {
       }
     }
 });
+
+
+
+// For content full width when click
+$(".header__icon").on('click', function(){
+  $("#sidebar__part").animate({left : "-250px"});
+  $("#header__part").animate({paddingLeft : "0px"});
+  $("#main__content").animate({paddingLeft : "0px"});
+  $("#footer__part").animate({paddingLeft : "0px"});
+});
+

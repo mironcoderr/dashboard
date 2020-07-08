@@ -14,34 +14,10 @@
         @include backgroud__overlay;
     }
 
-    &:nth-child(1) {
-        &::before {
-            background: linear-gradient(rgba(255, 45, 26, 0.8), rgba(196, 9, 9, 0.8));
-        }
-    }
-
-    &:nth-child(2) {
-        &::before {
-            background: linear-gradient(rgba(255, 203, 26, 0.8), rgba(196, 128, 9, 0.8));
-        }
-    }
-
-    &:nth-child(3) {
-        &::before {
-            background: linear-gradient(rgba(23, 247, 38, 0.8), rgba(40, 196, 9, 0.8));
-        }
-    }
-
-    &:nth-child(4) {
-        &::before {
-            background: linear-gradient(rgba(26, 162, 255, 0.8), rgba(9, 146, 196, 0.8));
-        }
-    }
-
     .info__heading {
         @include flex__center;
         justify-content: space-between;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
 
         h3 {
             color: $wh__color;
@@ -83,5 +59,30 @@
                 }
             }
         }
+    }
+}
+
+
+.info__1 {
+    &::before {
+        background: linear-gradient(rgba(255, 45, 26, 0.8), rgba(196, 9, 9, 0.8));
+    }
+}
+
+.info__2 {
+    &::before {
+        background: linear-gradient(rgba(255, 203, 26, 0.8), rgba(196, 128, 9, 0.8));
+    }
+}
+
+.info__3 {
+    &::before {
+        background: linear-gradient(rgba(23, 247, 38, 0.8), rgba(40, 196, 9, 0.8));
+    }
+}
+
+.info__4 {
+    &::before {
+        background: linear-gradient(rgba(26, 162, 255, 0.8), rgba(9, 146, 196, 0.8));
     }
 }

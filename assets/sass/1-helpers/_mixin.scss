@@ -94,9 +94,11 @@
 //      DROPDOWN MENU ANCHOR TAG
 //======================================
 @mixin dropdown__anchor {
-    @include flex__center;
-    justify-content: start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    border-radius: 8px;
     padding: 12px 25px 12px 25px;
     border-bottom: 1px solid $e__color;
 }

@@ -63,7 +63,7 @@
     .container {
         .control__form {
             width: 100%;
-            height: auto;
+            height: 1200px;
             border-radius: 8px;
             background: $wh__color;
             box-shadow: $md__shadow;
@@ -146,11 +146,10 @@
                 }
             }
 
-            .control__compo__cover {
+            .control__component__cover {
                 padding: 25px 25px;
                 border-radius: 8px;
                 background: $ef__color;
-                margin-bottom: 50px;
 
                 &:last-child {
                     margin-bottom: 0px;
@@ -174,7 +173,7 @@
         }
 
         .control__gape {
-            margin-top: 30px;
+            margin-top: 25px;
         }
     }
 }

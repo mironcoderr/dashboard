@@ -1,0 +1,9 @@
+
+
+.custom-select {
+    width: 80px !important;
+    height: 35px !important;
+    font-size: $sm__size !important;
+    @include regular__typography;
+    margin: 0px 5px;
+}

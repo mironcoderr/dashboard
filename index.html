@@ -593,10 +593,10 @@
         <section id="chart__part">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7">
-                        <div class="bar__chart">
+                    <div class="col-lg-12">
+                        <div class="real__chart">
                             <div class="heading">
-                                <h3>Revenue statistics</h3>
+                                <h3>Real time data sorting chart</h3>
                                 <div class="heading__dots">
                                     <a class="dots" href="#"><i class="flaticon-menu-1"></i></a>
                                     <ul class="dots__menu">
@@ -607,27 +607,13 @@
                                     </ul>
                                 </div>
                             </div>
-                            <canvas id="bar-chart"></canvas>
-                            <div class="earning__content">
-                                <ul>
-                                    <li>$24,289</li>
-                                    <li>this month</li>
-                                </ul>
-                                <ul>
-                                    <li>$19,821</li>
-                                    <li>this year</li>
-                                </ul>
-                                <ul>
-                                    <li>$98,390</li>
-                                    <li>previous year</li>
-                                </ul>
-                            </div>
+                            <div id="realchart"></div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
-                        <div class="doughnut__chart">
+                    <div class="col-lg-6">
+                        <div class="donut__chart">
                             <div class="heading">
-                                <h3>doughnut chart</h3>
+                                <h3>Donut with radial gradient chart</h3>
                                 <div class="heading__dots">
                                     <a class="dots" href="#"><i class="flaticon-menu-1"></i></a>
                                     <ul class="dots__menu">
@@ -638,7 +624,24 @@
                                     </ul>
                                 </div>
                             </div>
-                            <canvas id="doughnut-chart"></canvas>
+                            <div id="donutchart"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="moving__bar">
+                            <div class="heading">
+                                <h3>Bars with moving bullets</h3>
+                                <div class="heading__dots">
+                                    <a class="dots" href="#"><i class="flaticon-menu-1"></i></a>
+                                    <ul class="dots__menu">
+                                        <li><a href="#">sales report</a></li>
+                                        <li><a href="#">action task</a></li>
+                                        <li><a href="#">remove data</a></li>
+                                        <li><a href="#">cancel card</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="movingbar"></div>
                         </div>
                     </div>
                 </div>
@@ -668,6 +671,23 @@
                                         <li><a href="#">cancel card</a></li>
                                     </ul>
                                 </div>
+                            </div>
+                            <div class="sort__and__src">
+                                <div class="latest__sort">
+                                    <h3>show</h3>
+                                    <select class="custom-select">
+                                        <option value="0">1O</option>
+                                        <option value="1">20</option>
+                                        <option value="2">30</option>
+                                        <option value="3">40</option>
+                                        <option value="4">50</option>
+                                    </select>
+                                    <h3>entries</h3>
+                                </div>
+                                <form class="form-inline">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                </form>
                             </div>
                             <div class="latest__table">
                                 <div class="latest__cover">
@@ -778,23 +798,28 @@
                                     </ul>
                                 </div>
                             </div>
-                            <ul class="pagination">
-                                <li class="page-item">
-                                  <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                  </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">...</a></li>
-                                <li class="page-item"><a class="page-link" href="#">18</a></li>
-                                <li class="page-item">
-                                  <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                  </a>
-                                </li>
-                            </ul>
+                            <div class="show__and__pagination">
+                                <div class="latest__show__result">
+                                    <p>Showing 1 to 10 of 57 entries</p>
+                                </div>
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                      <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                      </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">18</a></li>
+                                    <li class="page-item">
+                                      <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                      </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1045,7 +1070,12 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.nicescroll.min.js"></script>
     <script src="assets/js/accordion.js"></script>
-    <script src="assets/js/Chart.min.js"></script>
+    <!-- <script src="assets/js/Chart.min.js"></script> -->
+    <!-- chart js link part start -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <!-- chart js link part end -->
     <script src="assets/js/main.js"></script>
     <!--===================================
                 JS LINK PART END

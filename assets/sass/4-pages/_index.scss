@@ -72,7 +72,7 @@
                 }
             }
 
-            .moving__bar {
+            .column__chart {
                 background: $wh__color;
                 border-radius: 8px;
                 box-shadow: $md__shadow;
@@ -81,7 +81,7 @@
                 margin-top: 30px;
                 overflow: hidden;
 
-                #movingbar {
+                #columnchart {
                     width: 100%;
                     height: 100%;
                 }

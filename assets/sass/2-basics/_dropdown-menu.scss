@@ -66,6 +66,7 @@
 
         a {
             @include dropdown__anchor;
+            justify-content: start;
 
             &:last-child {
                 border-bottom: none;
@@ -128,11 +129,12 @@
     }
 
     .language__menu {
-        height: 180px;
+        height: 192px;
         padding: 8px 0px 5px;
 
         a {
             @include dropdown__anchor;
+            justify-content: start;
     
             &:last-child {
                 border-bottom: none;

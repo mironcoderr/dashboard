@@ -1,0 +1,370 @@
+
+
+// =====================================
+//        USER PROFILE SECTION
+//======================================
+#profile__part {
+    margin-bottom: 30px;
+
+    .container {
+        .pfl__user {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background: $wh__color;
+            box-shadow: $md__shadow;
+            padding: 30px 30px;
+            margin-bottom: 30px;
+
+            .pfl__cover {
+                display: flex;
+                align-items: flex-start;
+                justify-content: start;
+
+                .pfl__img {
+                    display: inline-block;
+                    position: relative;
+                    margin-right: 30px;
+    
+                    img {
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                        box-shadow: $sm__shadow;
+                    }
+    
+                    a {
+                        position: absolute;
+                        bottom: 0px;
+                        right: 0px;
+    
+                        i {
+                            width: 40px;
+                            height: 40px;
+                            line-height: 37px;
+                            text-align: center;
+                            border-radius: 50%;
+                            background: $brand__gradient;
+                            border: 2px solid $wh__color;
+                            font-size: $sm__size;
+                            color: $wh__color;
+                        }
+                    }
+                }
+    
+                .pfl__name {
+                    width: 100%;
+
+                    h3 {
+                        color: $heading__color;
+                        font-size: $xmd__size;
+                        @include medium__typography;
+                        text-transform: capitalize;
+                        margin-top: 20px;
+                        margin-bottom: 5px !important;
+                    }
+
+                    p {
+                        color: $text__color;
+                        font-size: $sm__size;
+                        @include regular__typography;
+                        text-transform: capitalize;
+                    }
+
+                    .pfl__document {
+                        @include flex__center;
+                        justify-content: space-between;
+                        margin-top: 25px;
+
+                        li {
+                            h4 {
+                                color: $sidebar__hover;
+                                font-size: $md__size;
+                                font-weight: $bold__weight;
+                                margin-bottom: 8px !important;
+                            }
+
+                            h5 {
+                                color: $text__color;
+                                font-size: $sm__size;
+                                @include regular__typography;
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pfl__bio {
+                margin-top: 25px;
+
+                .pfl__sub__heading {
+                    color: $heading__color;
+                    font-size: $md__size;
+                    @include medium__typography;
+                    text-transform: capitalize;
+                    margin-bottom: 15px !important;
+                }
+
+                p {
+                    color: $text__color;
+                    font-size: $sm__size;
+                    @include regular__typography;
+                    line-height: 24px;
+
+                    a {
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+
+        .pfl__contact {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background: $wh__color;
+            box-shadow: $md__shadow;
+            padding: 35px 35px;
+
+            .pfl__sub__heading {
+                color: $heading__color;
+                font-size: $md__size;
+                @include medium__typography;
+                text-transform: capitalize;
+                margin-bottom: 25px !important;
+            }
+
+            ul {
+                @include flex__center;
+                justify-content: start;
+                margin-bottom: 28px !important;
+
+                &:last-child {
+                    margin-bottom: 0px !important;
+                }
+
+                .pfl__contact__icon {
+                    margin-right: 15px;
+
+                    i {
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        border-radius: 50%;
+                        background: $icon__bg;
+                        font-size: $md__size;
+                        color: $sidebar__hover;
+                    }
+                }
+
+                .pfl__contact__text {
+                    h3 {
+                        color: $heading__color;
+                        font-size: $sm__size;
+                        @include medium__typography;
+                        text-transform: capitalize;
+                        margin-bottom: 5px !important;
+                    }
+
+                    p {
+                        color: $text__color;
+                        font-size: $sm__size;
+                        @include regular__typography;
+                    }
+
+                    a {
+                        font-size: $sm__size;
+                        @include regular__typography;
+                    }
+                }
+            }
+        }
+
+        .pfl__progress {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background: $wh__color;
+            box-shadow: $md__shadow;
+            padding: 35px 35px;
+
+            .pfl__sub__heading {
+                color: $heading__color;
+                font-size: $md__size;
+                @include medium__typography;
+                text-transform: capitalize;
+                margin-bottom: 25px !important;
+            }
+
+            .pfl__progress__item {
+                margin-bottom: 22px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                label {
+                    color: $heading__color;
+                    font-size: $sm__size;
+                    @include medium__typography;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .pfl__toast {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background: #b5b5b5;
+            box-shadow: $md__shadow;
+            padding: 30px 35px;
+
+            .pfl__sub__heading {
+                color: $heading__color;
+                font-size: $md__size;
+                @include medium__typography;
+                text-transform: capitalize;
+                margin-bottom: 25px !important;
+            }
+
+            .toast {
+                width: 100%;
+                opacity: 1;
+
+                .toast-header {
+                    padding: .45rem .75rem;
+
+                    .toast__img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .toast-body {
+                    color: $text__color;
+                    font-size: $sm__size;
+                    @include regular__typography;
+                }
+            }
+        }
+
+        .psl__card {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background: $wh__color;
+            box-shadow: $md__shadow;
+            padding: 35px 35px;
+
+            .psl__heading {
+                color: $heading__color;
+                font-size: $xmd__size;
+                @include medium__typography;
+                text-transform: capitalize;
+                margin-bottom: 25px !important;
+            }
+
+            .psl__form {
+                .psl__content {
+                    padding: 25px 25px;
+                    border-radius: 8px;
+                    background: $ef__color;
+                    margin-bottom: 30px;
+
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+
+                    .psl__sub__heading {
+                        color: $heading__color;
+                        font-size: $md__size;
+                        @include medium__typography;
+                        text-transform: capitalize;
+                        margin-left: 35px;
+                        margin-bottom: 15px !important;
+                        position: relative;
+
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            top: 50%;
+                            left: -35px;
+                            transform: translateY(-50%);
+                            width: 25px;
+                            height: 2px;
+                            background: $brand__gradient;
+                        }
+                    }
+
+                    .form-group {
+                        margin-bottom: 22px;
+
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+
+                        label {
+                            color: $text__color;
+                            font-size: $sm__size;
+                            @include medium__typography;
+                            text-transform: capitalize;
+                        }
+
+                        .form-control {
+                            height: 40px;
+                            color: $text__color;
+                            font-size: $sm__size;
+                            @include regular__typography;
+
+                            &::placeholder {
+                                color: $seven__color;
+                                font-size: $sm__size;
+                                @include regular__typography;
+                            }
+                        }
+
+                        textarea {
+                            height: 80px !important;
+                        }
+                    }
+
+                    .form-check {
+                        padding-left: 1.5rem;
+                        margin-bottom: 5px;
+
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+
+                        label {
+                            color: $text__color;
+                            font-size: $md__size;
+                            @include regular__typography;
+                        }
+
+                        .form-check-input {
+                            margin-top: .4rem;
+                            margin-left: -1.5rem;
+                        }
+                    }
+                }
+
+                .btn {
+                    padding: 12px 35px;
+                    border-radius: 8px;
+                    box-shadow: $card__box__shadow;
+                    color: $wh__color;
+                    font-size: $md__size;
+                    @include medium__typography;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+
+
